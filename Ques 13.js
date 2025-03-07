@@ -10,10 +10,10 @@ let newTasks = ["nt1","nt2"];
 let newList = [];
 
 for (let i = 0; i < newTasks.length;i++) {
-    newList[i] = newTasks[i];
+    newList[i] = newTasks[i]; // Add the new task to new List
 }
 for(let i = 0; i < result.length; i++) {
-    newList[newTasks.length + i] = result[i];
+    newList[newTasks.length + i] = result[i]; // Merging the result array with the newList
 }
 
 //Replace the last task in the list with a new task.
