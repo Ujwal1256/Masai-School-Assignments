@@ -14,7 +14,8 @@ while (true) {
 }
 
 function calculatePrice(price, discount) {
-    let result = (price * (discount / 100));
+    let result = price - (price * (discount / 100));
     return result; 
 }
-console.log(`Final Price: $${calculatePrice(price, discount).toFixed(2)}`);
+let final_price = calculatePrice(price, discount).toFixed(2);
+console.log(`Final Price: $${final_price}`);
